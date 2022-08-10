@@ -1,12 +1,5 @@
 use drugs
 
-select *
-from drugspending
-where Mftr_Name ='aegerion pharma'
-
-
-
-
 --top 10 drugs by medicaid spending 2016-2019 (summing the years totals) 
 select top 10 brnd_name, gnrc_name,SUM(tot_spndng_2016 + Tot_Spndng_2017 + tot_spndng_2018 + tot_spndng_2019) as totalSpending2016To2019
 from drugspending
